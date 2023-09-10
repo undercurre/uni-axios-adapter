@@ -1,7 +1,4 @@
-import axios, {
-  type AxiosResponse,
-  type InternalAxiosRequestConfig,
-} from "axios";
+import axios, { type AxiosResponse, type InternalAxiosRequestConfig } from 'axios';
 
 const getResponse = (
   res: UniApp.RequestSuccessCallbackResult | UniApp.GeneralCallbackResult,
@@ -10,7 +7,7 @@ const getResponse = (
   let statusCode = 401;
   let header = null;
   let data = null;
-  if ("statusCode" in res) {
+  if ('statusCode' in res) {
     statusCode = res.statusCode;
     header = res.header;
     data = res.data;
@@ -20,10 +17,10 @@ const getResponse = (
     ...res,
     data: data,
     status: statusCode,
-    statusText: errMsg ?? "No Msg",
+    statusText: errMsg ?? 'No Msg',
     headers: header,
     config,
-    request: null,
+    request: null
   };
 
   return response;
@@ -31,36 +28,21 @@ const getResponse = (
 
 const uniAdapter = (config: InternalAxiosRequestConfig) => {
   if (!uni) {
-    throw new Error("please use this in uni-app project!");
+    throw new Error('please use this in uni-app project!');
   }
   return new Promise((resolve, reject) => {
     const { baseURL, url, headers, data, params, method } = config;
 
     const uniConfig: UniApp.RequestOptions = {
-      url: (baseURL || "") + url,
+      url: (baseURL || '') + url,
       data: data, // 可选
       header: headers, // 可选
-      method: [
-        "OPTIONS",
-        "GET",
-        "HEAD",
-        "POST",
-        "PUT",
-        "DELETE",
-        "TRACE",
-        "CONNECT",
-      ].includes(method === undefined ? "GET" : method)
-        ? (method as
-            | "OPTIONS"
-            | "GET"
-            | "HEAD"
-            | "POST"
-            | "PUT"
-            | "DELETE"
-            | "TRACE"
-            | "CONNECT")
-        : "GET", // 可选
-      timeout: config.timeout, // 可选// 可选
+      method: ['OPTIONS', 'GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'TRACE', 'CONNECT'].includes(
+        method === undefined ? 'GET' : method
+      )
+        ? (method as 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT')
+        : 'GET', // 可选
+      timeout: config.timeout // 可选// 可选
     };
 
     if (data || params) {
@@ -79,9 +61,9 @@ const uniAdapter = (config: InternalAxiosRequestConfig) => {
       fail(res) {
         const response = getResponse(res, config);
         reject(response);
-      },
+      }
     });
   });
 };
 
-export default uniAdapter
+export default uniAdapter;

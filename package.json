@@ -12,6 +12,7 @@
     "@dcloudio/types": "^3.3.2",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3000020210521001",
     "axios": "^1.5.0",
+    "eslint": "^8.49.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.9"
   }
