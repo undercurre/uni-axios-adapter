@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["@dcloudio/types"]
   },
-  "include": ["src"]
+  "include": ["src", "lint-staged.config.js", "commitlint.config.js"]
 }
