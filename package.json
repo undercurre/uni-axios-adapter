@@ -2,23 +2,23 @@
   "name": "uni-axios-adapter",
   "private": true,
   "version": "0.0.2",
+  "main": "dist/uni-axios-adapter.mjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "prepare": "husky install",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "release": "standard-version",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@dcloudio/types": "^3.3.2",
-    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3000020210521001",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "axios": "^1.5.0",
@@ -33,8 +33,7 @@
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.4"
+    "vite": "^4.4.9"
   },
   "config": {
     "commitizen": {
