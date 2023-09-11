@@ -26,7 +26,7 @@ const getResponse = (
   return response;
 };
 
-const uniAdapter = (config: InternalAxiosRequestConfig) => {
+const uniAdapter = (config: InternalAxiosRequestConfig): Promise<AxiosResponse<any>> => {
   if (!uni) {
     throw new Error('please use this in uni-app project!');
   }
