@@ -1,4 +1,4 @@
-import axios, { type AxiosResponse, type InternalAxiosRequestConfig } from 'axios';
+import { type AxiosResponse, type InternalAxiosRequestConfig } from 'axios';
 
 const getResponse = (
   res: UniApp.RequestSuccessCallbackResult | UniApp.GeneralCallbackResult,
