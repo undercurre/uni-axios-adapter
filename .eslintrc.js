@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [],
+  extends: ["typescript", "prettier"],
   parserOptions: {
     ecmaVersion: 'latest'
   },
