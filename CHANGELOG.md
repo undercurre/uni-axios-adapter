@@ -1,4 +1,11 @@
 chore(release): @{{currentTag}} [skip ci]
+### [0.0.8](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.7...v0.0.8) (2023-09-12)
+
+
+### Chores
+
+* **utils:** 集成vite-plugin-dts ([e9a11ff](https://github.com/undercurre/uni-axios-adapter/commit/e9a11ff143a713d8bf33ce0de8eb7859a10da655))
+
 ### [0.0.7](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.6...v0.0.7) (2023-09-12)
 
 ### [0.0.6](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.5...v0.0.6) (2023-09-12)
