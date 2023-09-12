@@ -1,4 +1,11 @@
 chore(release): @{{currentTag}} [skip ci]
+### [0.0.3](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.1...v0.0.3) (2023-09-12)
+
+
+### Features
+
+* **release:** 加入index.d.ts ([a97f147](https://github.com/undercurre/uni-axios-adapter/commit/a97f1472f57ec372c4e238c3070e3fb57a1fc614))
+
 ### [0.0.1](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.2...v0.0.1) (2023-09-12)
 
 

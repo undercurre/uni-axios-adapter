@@ -1,6 +1,6 @@
 {
   "name": "uni-axios-adapter-all",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/uni-axios-adapter.mjs",
   "scripts": {
     "dev": "vite",
@@ -16,7 +16,7 @@
   },
   "files": [
     "dist/",
-    "types/",
+    "types/index.ts",
     "README.md",
     "package.json"
   ],
