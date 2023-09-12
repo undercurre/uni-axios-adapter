@@ -1,4 +1,16 @@
 chore(release): @{{currentTag}} [skip ci]
+### [0.0.1](https://github.com/undercurre/uni-axios-adapter/compare/v0.0.2...v0.0.1) (2023-09-12)
+
+
+### Features
+
+* **release:** 可构建 ([588ba62](https://github.com/undercurre/uni-axios-adapter/commit/588ba6248f8d0a80e2bb5dce72557cfda3e63f66))
+
+
+### Chores
+
+* **release:** 发版 ([bd0ca27](https://github.com/undercurre/uni-axios-adapter/commit/bd0ca2705bdfce022e2fff514dd54485f1e72ec7))
+
 ### 0.0.2 (2023-09-11)
 
 
