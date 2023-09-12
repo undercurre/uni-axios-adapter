@@ -1,7 +1,14 @@
 {
   "name": "uni-axios-adapter-all",
   "version": "0.0.8",
-  "main": "dist/uni-axios-adapter.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

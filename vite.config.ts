@@ -8,12 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'uni-adapter'
-    },
-    rollupOptions: {
-      output: {
-        format: 'esm'
-      }
+      formats: ['es', 'cjs', 'umd'],
+      name: 'uni-adapter',
+      fileName: 'index'
     }
   }
 });
