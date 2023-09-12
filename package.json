@@ -1,7 +1,6 @@
 {
-  "name": "uni-axios-adapter",
-  "private": true,
-  "version": "0.0.2",
+  "name": "uni-axios-adapter-all",
+  "version": "0.0.0",
   "main": "dist/uni-axios-adapter.mjs",
   "scripts": {
     "dev": "vite",
@@ -15,6 +14,11 @@
     "commit": "git add . && git-cz",
     "publish": "npm publish"
   },
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",

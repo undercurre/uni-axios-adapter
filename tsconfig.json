@@ -18,7 +18,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["@dcloudio/types"]
+    "types": ["@dcloudio/types"],
+
+    "declaration": true
   },
   "include": ["src", "lint-staged.config.js", "commitlint.config.js"]
 }
