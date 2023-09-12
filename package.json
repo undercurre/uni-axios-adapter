@@ -1,6 +1,6 @@
 {
   "name": "uni-axios-adapter-all",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/uni-axios-adapter.mjs",
   "scripts": {
     "dev": "vite",
@@ -16,10 +16,10 @@
   },
   "files": [
     "dist/",
-    "types/index.d.ts",
     "README.md",
     "package.json"
   ],
+  "types": "types/index.d.ts",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
