@@ -38,11 +38,19 @@ const uniAdapter = (config: InternalAxiosRequestConfig): Promise<AxiosResponse<a
       data: data, // 可选
       header: headers, // 可选
       method: ['OPTIONS', 'GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'TRACE', 'CONNECT'].includes(
-        method === undefined ? 'GET' : method
+        method === undefined ? 'GET' : method.toUpperCase()
       )
-        ? (method as 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT')
+        ? (method?.toUpperCase() as
+            | 'OPTIONS'
+            | 'GET'
+            | 'HEAD'
+            | 'POST'
+            | 'PUT'
+            | 'DELETE'
+            | 'TRACE'
+            | 'CONNECT')
         : 'GET', // 可选
-      timeout: config.timeout // 可选// 可选
+      timeout: config.timeout === 0 ? 60000 : config.timeout // 可选// 可选
     };
 
     if (data || params) {
@@ -52,6 +60,9 @@ const uniAdapter = (config: InternalAxiosRequestConfig): Promise<AxiosResponse<a
         uniConfig.data = data || params;
       }
     }
+
+    uniConfig.header['Content-Type'] = uniConfig.header['Content-Type'] || 'application/json';
+
     uni.request({
       ...uniConfig,
       success(res) {
