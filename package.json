@@ -1,6 +1,6 @@
 {
   "name": "uni-axios-adapter-all",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "exports": {
@@ -44,6 +44,7 @@
     "husky": ">=7",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
+    "standard-version": "^9.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3"
